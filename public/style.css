@@ -101,3 +101,10 @@ button:hover{
     cursor: pointer;
     background: #0490c4;
 }
+
+
+@media (min-width:375px){
+  .header{
+
+  }
+}
