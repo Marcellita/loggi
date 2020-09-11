@@ -6,52 +6,70 @@ body {
   padding: 0;
 }
 
-.main{
+.main {
   display: flex;
   justify-content: space-between;
 }
 
-.header{
-  background-color: #00BAFF;
+.header {
+  background-color: #00baff;
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
-.footer{
-  background-color: #00BAFF;
+.footer {
+  background-color: #00baff;
   text-align: center;
   padding: 10px;
   font-weight: bold;
-  color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  margin-top:10px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
 }
 
-a{
+a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.logo{
+.logo {
   height: 7vh;
   padding: 1vh;
 }
 
-#map {
+.map {
   height: 100vh;
-  width: 105vh;
+  width: 60vw;
 }
 
-.article{
+.drivers {
+  margin-top: 80px;
+  border-style: dashed;
+  border-color: #00baff;
+  padding: 1px 10px 1px 10px;
+  text-align: center;
+  max-width: 20vw;
+}
+.article {
   max-width: 100vh;
-  font-family: Open Sans,Tahoma,Helvetica,Arial,sans-serif;
+  font-family: Open Sans, Tahoma, Helvetica, Arial, sans-serif;
   text-align: justify;
   margin-left: 20px;
+  margin-top: 25px;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.titulo-mapa{
+.map-title {
   text-align: center;
+  color: #2e3545;
+}
+
+.info-title {
+  color: #2e3545;
 }
 
 .floating-panel {
@@ -63,8 +81,8 @@ a{
   padding-left: 10px;
 }
 
-.floating-panel button{
-  background-color: #00BAFF;
+.floating-panel button {
+  background-color: #00baff;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -82,8 +100,8 @@ a{
   padding-left: 10px;
 }
 
-.floating-panel button{
-  background-color: #00BAFF;
+.floating-panel button {
+  background-color: #00baff;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
@@ -93,18 +111,11 @@ a{
   font-size: 1em;
 }
 
-button:focus { 
-  outline: none; 
+button:focus {
+  outline: none;
 }
 
-button:hover{
-    cursor: pointer;
-    background: #0490c4;
-}
-
-
-@media (min-width:375px){
-  .header{
-
-  }
+button:hover {
+  cursor: pointer;
+  background: #0490c4;
 }
