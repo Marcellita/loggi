@@ -316,29 +316,13 @@ function setMarkers(map) {
   let infowindow = new google.maps.InfoWindow();
 }
 
-const endpoint = `https://www.loggi.com/graphql`;
+const endpoint = '';
 
-const Appquery = `
-query AppQuery {
-  closestDrivers(productType: 2, transportType: "1", lat: -23.55, lng: -46.63, radius: 15.0, limit: 400, citySlug:"sp") {
-    driversCount
-    readyDriversCount
-    busyDriversCount
-    drivers {
-      lng
-      lat
-      busy
-    }
-  }
-}`;
+const App = ''
 
 const consumirApi = async (endpoint, query, variables = {}) => {
   const response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      Authorization: `ApiKey larissa.miyaji@gmail.com:690606c72dd744f76826a04630a8a16268ac2560`,
-      "Content-Type": "application/json",
-    },
+    method: "",
     body: JSON.stringify({ query, variables }),
   });
   return response.json();
